@@ -2,9 +2,10 @@
 
 ## Fastest path: import the prebuilt shortcut (needs a Mac once)
 
-A ready-made shortcut with all 39 HealthKit actions ships in
-[../shortcut/](../shortcut/). Apple blocks importing unsigned shortcut files, so sign it for
-yourself on any Mac:
+A ready-made shortcut with all 39 HealthKit actions ships in [../shortcut/](../shortcut/) and
+as a downloadable package on the
+[Releases page](https://github.com/PrajwalSood/OpenNutriSync/releases). Apple blocks importing
+unsigned shortcut files, so sign it for yourself on any Mac:
 
 ```sh
 cd shortcut
