@@ -31,7 +31,9 @@ No backend, no signup, no deploy.
 1. Paste [docs/SYSTEM_PROMPT.md](docs/SYSTEM_PROMPT.md) into any LLM chat app (ChatGPT,
    Claude, Gemini — whatever you already use). No account setup, no Gem/GPT/Project to
    create. See [docs/USAGE.md](docs/USAGE.md).
-2. Build the iOS Shortcut per [docs/SHORTCUT_SETUP.md](docs/SHORTCUT_SETUP.md) — steps 1–3 only.
+2. Get the iOS Shortcut: import the prebuilt one from [shortcut/](shortcut/) (sign it for
+   yourself on a Mac with one command), or build it by hand — both covered in
+   [docs/SHORTCUT_SETUP.md](docs/SHORTCUT_SETUP.md).
 3. Describe a meal in the chat app, tap the link it replies with. Done — it's in Apple Health.
 
 ## 2. Dashboard & history (optional)

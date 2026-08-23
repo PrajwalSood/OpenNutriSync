@@ -1,5 +1,25 @@
 # iOS Shortcut Setup — `LogFullNutrition`
 
+## Fastest path: import the prebuilt shortcut (needs a Mac once)
+
+A ready-made shortcut with all 39 HealthKit actions ships in
+[../shortcut/](../shortcut/). Apple blocks importing unsigned shortcut files, so sign it for
+yourself on any Mac:
+
+```sh
+cd shortcut
+shortcuts sign --input LogFullNutrition-unsigned.shortcut \
+               --output LogFullNutrition.shortcut
+```
+
+Double-click the signed file — it imports into Shortcuts and syncs to your iPhone via iCloud
+(or AirDrop it). Done: HealthKit logging works immediately. If you also want the dashboard,
+add the webhook step from §4 below inside the imported shortcut.
+
+No Mac? Build it by hand following the steps below.
+
+## Building manually
+
 Create an Apple Shortcut named `LogFullNutrition`.
 
 Steps 1–3 (parse payload, write to HealthKit) are the whole point of this project and work
