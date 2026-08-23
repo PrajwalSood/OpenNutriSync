@@ -32,7 +32,7 @@ No backend, no signup, no deploy.
    Claude, Gemini — whatever you already use). No account setup, no Gem/GPT/Project to
    create. See [docs/USAGE.md](docs/USAGE.md).
 2. Get the iOS Shortcut: download the prebuilt one from
-   [Releases](https://github.com/PrajwalSood/OpenNutriSync/releases) (sign it for yourself on
+   [Releases (v0.1.0, verified working)](https://github.com/PrajwalSood/OpenNutriSync/releases/tag/v0.1.0) (sign it for yourself on
    a Mac with one command), or build it by hand — both covered in
    [docs/SHORTCUT_SETUP.md](docs/SHORTCUT_SETUP.md).
 3. Describe a meal in the chat app, tap the link it replies with. Done — it's in Apple Health.
