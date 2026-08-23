@@ -1,13 +1,13 @@
 # OpenNutriSync
 
 Open-source, zero-friction nutrition tracking ecosystem. Converts multimodal meal descriptions
-from any LLM chat app into Apple HealthKit entries across 35+ dietary metrics via a native iOS
+from any LLM chat app into Apple HealthKit entries across all 39 dietary metrics via a native iOS
 Shortcut. A self-hosted dashboard backed by PostgreSQL is available as an optional add-on for
 long-term history and RDA tracking.
 
 Several open-source projects cover individual pieces of this pipeline (mobile apps, AI parsing,
 self-hosted dashboards, and databases), though virtually none tie the LLM-chat-first → iOS
-Shortcut → 35+ HealthKit field loop into a single turnkey project.
+Shortcut → 39 HealthKit field loop into a single turnkey project.
 
 ## Architecture
 
