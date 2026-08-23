@@ -80,6 +80,27 @@ def output_ref(action_uuid: str, output_name: str) -> dict:
     }
 
 
+def token_string(action_uuid: str, output_name: str) -> dict:
+    """Interpolated-string form of a magic variable (single token).
+
+    Numeric fields like WFQuantityFieldValue's Magnitude expect this
+    WFTextTokenString shape when they hold a variable instead of a literal.
+    """
+    return {
+        "Value": {
+            "string": "￼",
+            "attachmentsByRange": {
+                "{0, 1}": {
+                    "Type": "ActionOutput",
+                    "OutputUUID": action_uuid,
+                    "OutputName": output_name,
+                }
+            },
+        },
+        "WFSerializationType": "WFTextTokenString",
+    }
+
+
 def build() -> dict:
     actions = []
 
@@ -117,12 +138,17 @@ def build() -> dict:
             action(
                 "is.workflow.actions.health.quantity.log",
                 {
+                    "UUID": str(uuid.uuid4()).upper(),
                     "WFQuantitySampleType": sample_type,
                     "WFQuantitySampleQuantity": {
                         "Value": {
-                            "Magnitude": output_ref(value_uuid, sample_type),
+                            "Magnitude": token_string(value_uuid, sample_type),
                             "Unit": unit,
                         },
+                        "WFSerializationType": "WFQuantityFieldValue",
+                    },
+                    "WFQuantitySampleAdditionalQuantity": {
+                        "Value": {"Unit": unit},
                         "WFSerializationType": "WFQuantityFieldValue",
                     },
                 },
