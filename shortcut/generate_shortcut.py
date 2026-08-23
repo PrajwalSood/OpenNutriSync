@@ -80,24 +80,16 @@ def output_ref(action_uuid: str, output_name: str) -> dict:
     }
 
 
-def token_string(action_uuid: str, output_name: str) -> dict:
-    """Interpolated-string form of a magic variable (single token).
+def variable_wrapper(action_uuid: str, output_name: str) -> dict:
+    """Pure-variable form used by If conditions and quantity magnitudes.
 
-    Numeric fields like WFQuantityFieldValue's Magnitude expect this
-    WFTextTokenString shape when they hold a variable instead of a literal.
+    Both the conditional's WFInput and Log Health Sample's Magnitude must
+    carry this exact same token, or iOS renders the value as a different
+    (or unknown) variable.
     """
     return {
-        "Value": {
-            "string": "￼",
-            "attachmentsByRange": {
-                "{0, 1}": {
-                    "Type": "ActionOutput",
-                    "OutputUUID": action_uuid,
-                    "OutputName": output_name,
-                }
-            },
-        },
-        "WFSerializationType": "WFTextTokenString",
+        "Type": "Variable",
+        "Variable": output_ref(action_uuid, output_name),
     }
 
 
@@ -145,10 +137,7 @@ def build() -> dict:
                     "GroupingIdentifier": group_uuid,
                     "WFControlFlowMode": 0,
                     "WFCondition": 100,  # has any value
-                    "WFInput": {
-                        "Type": "Variable",
-                        "Variable": output_ref(value_uuid, sample_type),
-                    },
+                    "WFInput": variable_wrapper(value_uuid, sample_type),
                 },
             )
         )
@@ -160,7 +149,7 @@ def build() -> dict:
                     "WFQuantitySampleType": sample_type,
                     "WFQuantitySampleQuantity": {
                         "Value": {
-                            "Magnitude": token_string(value_uuid, sample_type),
+                            "Magnitude": variable_wrapper(value_uuid, sample_type),
                             "Unit": unit,
                         },
                         "WFSerializationType": "WFQuantityFieldValue",
@@ -219,18 +208,20 @@ def build() -> dict:
     )
 
     return {
+        "WFWorkflowName": "LogFullNutrition",
         "WFWorkflowMinimumClientVersion": 900,
         "WFWorkflowMinimumClientVersionString": "900",
-        "WFWorkflowClientVersion": "2607.1.3",
+        "WFWorkflowClientVersion": "2700.0.4",
         "WFWorkflowIcon": {
             "WFWorkflowIconStartColor": 4292093695,
-            "WFWorkflowIconGlyphNumber": 61440,
+            "WFWorkflowIconGlyphNumber": 62337,
         },
         "WFWorkflowImportQuestions": [],
         "WFWorkflowInputContentItemClasses": [
             "WFStringContentItem",
             "WFURLContentItem",
         ],
+        "WFWorkflowOutputContentItemClasses": [],
         "WFWorkflowTypes": [],
         "WFWorkflowHasOutputFallback": False,
         "WFWorkflowHasShortcutInputVariables": True,
