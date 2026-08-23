@@ -1,7 +1,9 @@
 # Free self-hosting: Vercel + Supabase
 
-No server needed. Supabase gives a free Postgres instance; Vercel hosts the Next.js dashboard
-and API routes for free on their Hobby tier.
+Optional. The core chat → HealthKit flow needs none of this — only follow this guide if you
+also want the web dashboard/history without running your own server. No server needed here:
+Supabase gives a free Postgres instance; Vercel hosts the Next.js dashboard and API routes for
+free on their Hobby tier.
 
 ## 1. Create the database (Supabase)
 
