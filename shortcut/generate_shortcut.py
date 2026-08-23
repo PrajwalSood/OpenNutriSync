@@ -120,9 +120,12 @@ def build() -> dict:
         )
     )
 
-    # 2. Per field: Get Dictionary Value (key path) -> Log Health Sample
+    # 2. Per field: Get Dictionary Value (key path) -> If has any value ->
+    #    Log Health Sample -> End If. The conditional keeps a missing or
+    #    empty key from making Log Health Sample prompt for manual input.
     for key_path, sample_type, unit in FIELDS:
         value_uuid = str(uuid.uuid4()).upper()
+        group_uuid = str(uuid.uuid4()).upper()
         actions.append(
             action(
                 "is.workflow.actions.getvalueforkey",
@@ -131,6 +134,21 @@ def build() -> dict:
                     "CustomOutputName": sample_type,
                     "WFDictionaryKey": key_path,
                     "WFInput": output_ref(payload_uuid, "Payload"),
+                },
+            )
+        )
+        actions.append(
+            action(
+                "is.workflow.actions.conditional",
+                {
+                    "UUID": str(uuid.uuid4()).upper(),
+                    "GroupingIdentifier": group_uuid,
+                    "WFControlFlowMode": 0,
+                    "WFCondition": 100,  # has any value
+                    "WFInput": {
+                        "Type": "Variable",
+                        "Variable": output_ref(value_uuid, sample_type),
+                    },
                 },
             )
         )
@@ -151,6 +169,16 @@ def build() -> dict:
                         "Value": {"Unit": unit},
                         "WFSerializationType": "WFQuantityFieldValue",
                     },
+                },
+            )
+        )
+        actions.append(
+            action(
+                "is.workflow.actions.conditional",
+                {
+                    "UUID": str(uuid.uuid4()).upper(),
+                    "GroupingIdentifier": group_uuid,
+                    "WFControlFlowMode": 2,
                 },
             )
         )

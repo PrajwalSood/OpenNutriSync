@@ -12,7 +12,7 @@
 				<key>CustomOutputName</key>
 				<string>Payload</string>
 				<key>UUID</key>
-				<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+				<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
@@ -33,7 +33,7 @@
 				<key>CustomOutputName</key>
 				<string>Dietary Energy</string>
 				<key>UUID</key>
-				<string>1039C75D-0CD2-4D19-B4C4-B6D9C95CA678</string>
+				<string>33488F64-8516-4D29-B7A7-9B6A04FEF10B</string>
 				<key>WFDictionaryKey</key>
 				<string>energy_hydration.dietary_energy_kcal</string>
 				<key>WFInput</key>
@@ -43,7 +43,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -54,11 +54,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>55154997-BA8A-43C0-93B5-0626BBD92620</string>
+				<key>UUID</key>
+				<string>6C4AA024-34E6-47F4-A131-85B466782AEA</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Dietary Energy</string>
+							<key>OutputUUID</key>
+							<string>33488F64-8516-4D29-B7A7-9B6A04FEF10B</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>D085C882-00E7-4BA0-9543-B536BA5E7C09</string>
+				<string>4B2B9270-5848-4DC1-811D-E6C680AE5397</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -84,7 +118,7 @@
 										<key>OutputName</key>
 										<string>Dietary Energy</string>
 										<key>OutputUUID</key>
-										<string>1039C75D-0CD2-4D19-B4C4-B6D9C95CA678</string>
+										<string>33488F64-8516-4D29-B7A7-9B6A04FEF10B</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -107,13 +141,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>55154997-BA8A-43C0-93B5-0626BBD92620</string>
+				<key>UUID</key>
+				<string>DBE95D18-DB7A-4461-8D9A-53956082B61E</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Water</string>
 				<key>UUID</key>
-				<string>B73041AA-AFFA-45C3-9423-E550291B1FA8</string>
+				<string>17567BB0-0984-4C1E-AE23-FDFDCCE85E4A</string>
 				<key>WFDictionaryKey</key>
 				<string>energy_hydration.water_ml</string>
 				<key>WFInput</key>
@@ -123,7 +170,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -134,11 +181,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>DC611C54-95FB-4747-B499-91BF0D509A2C</string>
+				<key>UUID</key>
+				<string>2A89E54A-7DD9-4ACA-846A-C18F62FB83F6</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Water</string>
+							<key>OutputUUID</key>
+							<string>17567BB0-0984-4C1E-AE23-FDFDCCE85E4A</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>C7D56F44-D2D7-4980-B1ED-81D38EE1226B</string>
+				<string>5125B9AF-222C-47C6-BCDA-3BBF21CF3F86</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -164,7 +245,7 @@
 										<key>OutputName</key>
 										<string>Water</string>
 										<key>OutputUUID</key>
-										<string>B73041AA-AFFA-45C3-9423-E550291B1FA8</string>
+										<string>17567BB0-0984-4C1E-AE23-FDFDCCE85E4A</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -187,13 +268,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>DC611C54-95FB-4747-B499-91BF0D509A2C</string>
+				<key>UUID</key>
+				<string>3E1840DF-99F7-4848-B953-9479535D1880</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Caffeine</string>
 				<key>UUID</key>
-				<string>B04D9EE6-2DDF-4905-B862-2DD76C8DF2AC</string>
+				<string>ECE8BED4-44FB-4FB9-AABC-096F59AC99D6</string>
 				<key>WFDictionaryKey</key>
 				<string>energy_hydration.caffeine_mg</string>
 				<key>WFInput</key>
@@ -203,7 +297,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -214,11 +308,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>56B71986-2CDF-4942-99CF-BAFBCF3B4F46</string>
+				<key>UUID</key>
+				<string>F2651BE3-F271-41AD-8B4D-CF59B29A6F11</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Caffeine</string>
+							<key>OutputUUID</key>
+							<string>ECE8BED4-44FB-4FB9-AABC-096F59AC99D6</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>003989E9-B1C3-4992-95FF-6DBBC63A49D4</string>
+				<string>3135CF5E-063D-4161-8B33-3383263DB79C</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -244,7 +372,7 @@
 										<key>OutputName</key>
 										<string>Caffeine</string>
 										<key>OutputUUID</key>
-										<string>B04D9EE6-2DDF-4905-B862-2DD76C8DF2AC</string>
+										<string>ECE8BED4-44FB-4FB9-AABC-096F59AC99D6</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -267,13 +395,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>56B71986-2CDF-4942-99CF-BAFBCF3B4F46</string>
+				<key>UUID</key>
+				<string>B405039E-A383-4EAD-AC2A-4B46C1AE45C2</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Carbohydrates</string>
 				<key>UUID</key>
-				<string>8EA61529-5660-41EB-98D2-6D0DFAF36E30</string>
+				<string>24A92556-7FEE-4869-AD38-777F540D6EA8</string>
 				<key>WFDictionaryKey</key>
 				<string>macronutrients.carbohydrates_g</string>
 				<key>WFInput</key>
@@ -283,7 +424,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -294,11 +435,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C54C43B2-660A-43B7-9513-5D7B897034AF</string>
+				<key>UUID</key>
+				<string>AD43766D-8CF4-4BA9-8227-B8B6DEA678A1</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Carbohydrates</string>
+							<key>OutputUUID</key>
+							<string>24A92556-7FEE-4869-AD38-777F540D6EA8</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>7152F03D-3FC5-4C72-8F95-C64E77FE5798</string>
+				<string>1C9E16B3-A42C-4809-A894-992AD557D938</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -324,7 +499,7 @@
 										<key>OutputName</key>
 										<string>Carbohydrates</string>
 										<key>OutputUUID</key>
-										<string>8EA61529-5660-41EB-98D2-6D0DFAF36E30</string>
+										<string>24A92556-7FEE-4869-AD38-777F540D6EA8</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -347,13 +522,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C54C43B2-660A-43B7-9513-5D7B897034AF</string>
+				<key>UUID</key>
+				<string>ED7C112E-38E8-43BF-B10C-3D2761761F35</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Dietary Sugar</string>
 				<key>UUID</key>
-				<string>517D655C-0FA7-43ED-8D0F-AF1CEFA0BB7C</string>
+				<string>6A621158-0E98-4125-81B9-4551AA74EA31</string>
 				<key>WFDictionaryKey</key>
 				<string>macronutrients.dietary_sugar_g</string>
 				<key>WFInput</key>
@@ -363,7 +551,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -374,11 +562,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C6711F89-5E0D-4468-B74A-AB097D860AE0</string>
+				<key>UUID</key>
+				<string>DD645DA2-D268-4766-85AA-9890A81A0D6B</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Dietary Sugar</string>
+							<key>OutputUUID</key>
+							<string>6A621158-0E98-4125-81B9-4551AA74EA31</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>4DFDE505-D1BD-4BF9-83F1-4B8A36B6CAD4</string>
+				<string>27AA44CA-8670-4189-B233-584C529A4B24</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -404,7 +626,7 @@
 										<key>OutputName</key>
 										<string>Dietary Sugar</string>
 										<key>OutputUUID</key>
-										<string>517D655C-0FA7-43ED-8D0F-AF1CEFA0BB7C</string>
+										<string>6A621158-0E98-4125-81B9-4551AA74EA31</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -427,13 +649,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C6711F89-5E0D-4468-B74A-AB097D860AE0</string>
+				<key>UUID</key>
+				<string>A06AA11C-E6C5-458A-89DD-341E23B8E7F4</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Fiber</string>
 				<key>UUID</key>
-				<string>17FCC8B6-A2A9-470D-9CEB-1D4A6D17564C</string>
+				<string>5A3C2447-E037-4266-971A-81338D75CCB1</string>
 				<key>WFDictionaryKey</key>
 				<string>macronutrients.fiber_g</string>
 				<key>WFInput</key>
@@ -443,7 +678,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -454,11 +689,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>08352EA3-0EA3-4273-B379-12DA28AF567E</string>
+				<key>UUID</key>
+				<string>42700A5F-5E2E-4F23-A9D4-1E1976552FF2</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Fiber</string>
+							<key>OutputUUID</key>
+							<string>5A3C2447-E037-4266-971A-81338D75CCB1</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>1BCFD4CD-316B-4AF7-B91C-70754DA3BAB3</string>
+				<string>A106995C-A2F9-4DC0-98CF-CFEBA543A339</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -484,7 +753,7 @@
 										<key>OutputName</key>
 										<string>Fiber</string>
 										<key>OutputUUID</key>
-										<string>17FCC8B6-A2A9-470D-9CEB-1D4A6D17564C</string>
+										<string>5A3C2447-E037-4266-971A-81338D75CCB1</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -507,13 +776,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>08352EA3-0EA3-4273-B379-12DA28AF567E</string>
+				<key>UUID</key>
+				<string>979746C1-5415-4668-996C-774DABE72B40</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Protein</string>
 				<key>UUID</key>
-				<string>37F3E445-6D8D-4478-A093-8F09855A9901</string>
+				<string>277E6251-AAAB-4927-A53A-64F183C4C6FC</string>
 				<key>WFDictionaryKey</key>
 				<string>macronutrients.protein_g</string>
 				<key>WFInput</key>
@@ -523,7 +805,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -534,11 +816,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>AFA03532-0915-45F2-AE0B-D644B9270A4A</string>
+				<key>UUID</key>
+				<string>C9D674B5-A4D2-47D8-99C8-85C7C5563A23</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Protein</string>
+							<key>OutputUUID</key>
+							<string>277E6251-AAAB-4927-A53A-64F183C4C6FC</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>CCBA1DB2-83A7-4425-B6E2-2923CB571605</string>
+				<string>35459120-EE49-4DEF-9339-D7BFE334A4C9</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -564,7 +880,7 @@
 										<key>OutputName</key>
 										<string>Protein</string>
 										<key>OutputUUID</key>
-										<string>37F3E445-6D8D-4478-A093-8F09855A9901</string>
+										<string>277E6251-AAAB-4927-A53A-64F183C4C6FC</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -587,13 +903,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>AFA03532-0915-45F2-AE0B-D644B9270A4A</string>
+				<key>UUID</key>
+				<string>1A3CBE3B-65D2-453F-9AB2-3EB95738084E</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Total Fat</string>
 				<key>UUID</key>
-				<string>502FB1E9-6362-432E-A268-DB6924992548</string>
+				<string>E070F3F1-0890-4E6A-A8E1-90F661771E99</string>
 				<key>WFDictionaryKey</key>
 				<string>macronutrients.total_fat_g</string>
 				<key>WFInput</key>
@@ -603,7 +932,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -614,11 +943,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>CD2A7E0F-9D91-456C-AEE0-263B201309C2</string>
+				<key>UUID</key>
+				<string>C79827C8-8BEB-4969-808E-097F894EB967</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Total Fat</string>
+							<key>OutputUUID</key>
+							<string>E070F3F1-0890-4E6A-A8E1-90F661771E99</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>ABCC3BF9-B8CE-4DAE-85B8-428AD93368FB</string>
+				<string>68CCDB3E-DF18-4EB7-BD29-02777E44B5F0</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -644,7 +1007,7 @@
 										<key>OutputName</key>
 										<string>Total Fat</string>
 										<key>OutputUUID</key>
-										<string>502FB1E9-6362-432E-A268-DB6924992548</string>
+										<string>E070F3F1-0890-4E6A-A8E1-90F661771E99</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -667,13 +1030,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>CD2A7E0F-9D91-456C-AEE0-263B201309C2</string>
+				<key>UUID</key>
+				<string>24EC2CF2-4890-4008-A0D9-A58B08EB19B8</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Saturated Fat</string>
 				<key>UUID</key>
-				<string>63AA5735-61E4-40F0-8A0E-409827A60D2C</string>
+				<string>30D5427F-06AA-4224-9979-37218EF1441E</string>
 				<key>WFDictionaryKey</key>
 				<string>macronutrients.saturated_fat_g</string>
 				<key>WFInput</key>
@@ -683,7 +1059,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -694,11 +1070,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2FF96BC4-1046-4F8B-955B-1FE85BA8B40C</string>
+				<key>UUID</key>
+				<string>C9A51D5C-DB4F-41A6-9920-DEEF6B423243</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Saturated Fat</string>
+							<key>OutputUUID</key>
+							<string>30D5427F-06AA-4224-9979-37218EF1441E</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>C79AFC63-6E8B-42BC-9798-69317F5D56C9</string>
+				<string>C51E27D2-5D0F-49EA-998F-9F07CDC7A674</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -724,7 +1134,7 @@
 										<key>OutputName</key>
 										<string>Saturated Fat</string>
 										<key>OutputUUID</key>
-										<string>63AA5735-61E4-40F0-8A0E-409827A60D2C</string>
+										<string>30D5427F-06AA-4224-9979-37218EF1441E</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -747,13 +1157,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2FF96BC4-1046-4F8B-955B-1FE85BA8B40C</string>
+				<key>UUID</key>
+				<string>E3047FE0-DC9D-49B0-AC9F-9F0567C130AE</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Monounsaturated Fat</string>
 				<key>UUID</key>
-				<string>90A4817E-7B0E-4951-8EB7-DD02838D9E3F</string>
+				<string>644B05BA-956C-42EA-A3B9-E780C523137D</string>
 				<key>WFDictionaryKey</key>
 				<string>macronutrients.monounsaturated_fat_g</string>
 				<key>WFInput</key>
@@ -763,7 +1186,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -774,11 +1197,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>AE015D8A-DAC6-47BF-ABB5-7E90B1877174</string>
+				<key>UUID</key>
+				<string>35A01776-A7F0-4D15-AD1F-39590861BD6B</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Monounsaturated Fat</string>
+							<key>OutputUUID</key>
+							<string>644B05BA-956C-42EA-A3B9-E780C523137D</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>310FBCC7-EB2B-440D-880B-2EE8DF8F33FF</string>
+				<string>84BF22D8-D4D5-4969-8966-C7DB8483BFCE</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -804,7 +1261,7 @@
 										<key>OutputName</key>
 										<string>Monounsaturated Fat</string>
 										<key>OutputUUID</key>
-										<string>90A4817E-7B0E-4951-8EB7-DD02838D9E3F</string>
+										<string>644B05BA-956C-42EA-A3B9-E780C523137D</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -827,13 +1284,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>AE015D8A-DAC6-47BF-ABB5-7E90B1877174</string>
+				<key>UUID</key>
+				<string>A3CB0B03-0B18-400A-AA86-C1BD6721F61F</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Polyunsaturated Fat</string>
 				<key>UUID</key>
-				<string>19B5E18B-74CE-4CAD-B20A-ABC6F9C229FB</string>
+				<string>1EE17DF1-C26F-4469-A06F-D513918A29FA</string>
 				<key>WFDictionaryKey</key>
 				<string>macronutrients.polyunsaturated_fat_g</string>
 				<key>WFInput</key>
@@ -843,7 +1313,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -854,11 +1324,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>08E7ACCB-7FA0-4ABD-AF7C-48089FEB5EF0</string>
+				<key>UUID</key>
+				<string>D0CF8A10-6654-48AA-AE45-1FB8B413B707</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Polyunsaturated Fat</string>
+							<key>OutputUUID</key>
+							<string>1EE17DF1-C26F-4469-A06F-D513918A29FA</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>0ADB75AC-6421-441E-9209-A9F9D51394F2</string>
+				<string>FF299EB3-9C42-4938-B746-273724393B61</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -884,7 +1388,7 @@
 										<key>OutputName</key>
 										<string>Polyunsaturated Fat</string>
 										<key>OutputUUID</key>
-										<string>19B5E18B-74CE-4CAD-B20A-ABC6F9C229FB</string>
+										<string>1EE17DF1-C26F-4469-A06F-D513918A29FA</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -907,13 +1411,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>08E7ACCB-7FA0-4ABD-AF7C-48089FEB5EF0</string>
+				<key>UUID</key>
+				<string>27864B52-C023-4A4D-997E-79F414E8F7DF</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Dietary Cholesterol</string>
 				<key>UUID</key>
-				<string>3A703E98-C2D2-4C2C-B580-AE69EB45C539</string>
+				<string>CF852CA1-9846-415C-93DD-FC0508EE8FB0</string>
 				<key>WFDictionaryKey</key>
 				<string>macronutrients.cholesterol_mg</string>
 				<key>WFInput</key>
@@ -923,7 +1440,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -934,11 +1451,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3399ECF7-7CA4-4AF2-84B1-8269F99AB506</string>
+				<key>UUID</key>
+				<string>F3F35DF9-B4E0-4CBF-B6D0-966F6A034E30</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Dietary Cholesterol</string>
+							<key>OutputUUID</key>
+							<string>CF852CA1-9846-415C-93DD-FC0508EE8FB0</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>0D01FEAF-F8E9-4282-A45D-3D93993A9466</string>
+				<string>50792078-7730-48D8-A73B-8B460DF089ED</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -964,7 +1515,7 @@
 										<key>OutputName</key>
 										<string>Dietary Cholesterol</string>
 										<key>OutputUUID</key>
-										<string>3A703E98-C2D2-4C2C-B580-AE69EB45C539</string>
+										<string>CF852CA1-9846-415C-93DD-FC0508EE8FB0</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -987,13 +1538,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3399ECF7-7CA4-4AF2-84B1-8269F99AB506</string>
+				<key>UUID</key>
+				<string>A17DFD3B-134D-401E-B0E9-5F21E3894167</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Vitamin A</string>
 				<key>UUID</key>
-				<string>1CB03866-75AD-4ABE-9E31-815034EC51BB</string>
+				<string>426F3917-B734-4F12-A464-C91DEF4A5B9A</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.vitamin_a_mcg</string>
 				<key>WFInput</key>
@@ -1003,7 +1567,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1014,11 +1578,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>90DDCC05-1A5D-4C3C-9741-6770A88F2B9F</string>
+				<key>UUID</key>
+				<string>A55E80A6-C15F-478B-9F72-6AA7B1CF3B5F</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Vitamin A</string>
+							<key>OutputUUID</key>
+							<string>426F3917-B734-4F12-A464-C91DEF4A5B9A</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>3E8B795D-ACF7-4DD8-8DC1-B77BBF53F9EE</string>
+				<string>56D8B03B-E6D5-465A-A4BD-D4546BD82B41</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1044,7 +1642,7 @@
 										<key>OutputName</key>
 										<string>Vitamin A</string>
 										<key>OutputUUID</key>
-										<string>1CB03866-75AD-4ABE-9E31-815034EC51BB</string>
+										<string>426F3917-B734-4F12-A464-C91DEF4A5B9A</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1067,13 +1665,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>90DDCC05-1A5D-4C3C-9741-6770A88F2B9F</string>
+				<key>UUID</key>
+				<string>1827885B-FF97-4DA4-833C-C8E930C7123D</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Thiamin</string>
 				<key>UUID</key>
-				<string>6AD8257D-9E55-41F6-AAA2-85C1BB2E67E5</string>
+				<string>A9A14CF2-7D8F-471F-9EAF-037CEAE37703</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.thiamin_b1_mg</string>
 				<key>WFInput</key>
@@ -1083,7 +1694,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1094,11 +1705,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>6DE73657-C057-4126-A73A-89AD91D2DC73</string>
+				<key>UUID</key>
+				<string>851B516B-0175-4F7E-9E0A-2FAFB237458F</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Thiamin</string>
+							<key>OutputUUID</key>
+							<string>A9A14CF2-7D8F-471F-9EAF-037CEAE37703</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>CFAB8184-6684-499D-BD32-6D88F0385BEE</string>
+				<string>DDDBADFC-1821-4522-A12F-B60B6463B3A1</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1124,7 +1769,7 @@
 										<key>OutputName</key>
 										<string>Thiamin</string>
 										<key>OutputUUID</key>
-										<string>6AD8257D-9E55-41F6-AAA2-85C1BB2E67E5</string>
+										<string>A9A14CF2-7D8F-471F-9EAF-037CEAE37703</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1147,13 +1792,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>6DE73657-C057-4126-A73A-89AD91D2DC73</string>
+				<key>UUID</key>
+				<string>75AACC8A-6BE8-4FDB-A667-AA2EF43B1DEB</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Riboflavin</string>
 				<key>UUID</key>
-				<string>AA4A0D2F-D0A0-4BE4-A915-75B296A2F108</string>
+				<string>4EF5F962-D504-4437-9865-79840172DD11</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.riboflavin_b2_mg</string>
 				<key>WFInput</key>
@@ -1163,7 +1821,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1174,11 +1832,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7801C7F8-506E-4F55-A2DF-F79534D417F1</string>
+				<key>UUID</key>
+				<string>13C5EB7D-FAAB-4BB7-B8BE-9B544AC975DB</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Riboflavin</string>
+							<key>OutputUUID</key>
+							<string>4EF5F962-D504-4437-9865-79840172DD11</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>CE367B14-41E7-4C26-BA06-0543F4CE2F8B</string>
+				<string>3A25610A-0C4F-4C0C-AB84-5D5AEEA0BE77</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1204,7 +1896,7 @@
 										<key>OutputName</key>
 										<string>Riboflavin</string>
 										<key>OutputUUID</key>
-										<string>AA4A0D2F-D0A0-4BE4-A915-75B296A2F108</string>
+										<string>4EF5F962-D504-4437-9865-79840172DD11</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1227,13 +1919,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7801C7F8-506E-4F55-A2DF-F79534D417F1</string>
+				<key>UUID</key>
+				<string>8A573292-2829-4F4B-AC42-EFE37AEC9E83</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Niacin</string>
 				<key>UUID</key>
-				<string>646B84D2-1702-4B58-923B-6C9BE68093F8</string>
+				<string>BCA89D83-9A58-4433-BA30-914B004A5B88</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.niacin_b3_mg</string>
 				<key>WFInput</key>
@@ -1243,7 +1948,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1254,11 +1959,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>E3ECF6F0-2F5E-4615-89AA-FA4E6EE77FDB</string>
+				<key>UUID</key>
+				<string>AC3BAB22-D821-4881-B91C-7D696BDCCCFC</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Niacin</string>
+							<key>OutputUUID</key>
+							<string>BCA89D83-9A58-4433-BA30-914B004A5B88</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>C88DB788-7885-43BE-813E-2E8E3CD9C22E</string>
+				<string>FC187B40-D48C-49A2-A153-0655ADA4303B</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1284,7 +2023,7 @@
 										<key>OutputName</key>
 										<string>Niacin</string>
 										<key>OutputUUID</key>
-										<string>646B84D2-1702-4B58-923B-6C9BE68093F8</string>
+										<string>BCA89D83-9A58-4433-BA30-914B004A5B88</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1307,13 +2046,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>E3ECF6F0-2F5E-4615-89AA-FA4E6EE77FDB</string>
+				<key>UUID</key>
+				<string>C049FCAD-30A5-4BFA-AA9F-0CB34F4E09CE</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Pantothenic Acid</string>
 				<key>UUID</key>
-				<string>99118607-2F5A-48C7-9294-50C3EBE35917</string>
+				<string>DBE2636F-0F0A-4069-A084-40F87F7DA043</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.pantothenic_acid_b5_mg</string>
 				<key>WFInput</key>
@@ -1323,7 +2075,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1334,11 +2086,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>96F7A571-4E7A-424A-85A8-6DEE82D755B8</string>
+				<key>UUID</key>
+				<string>ECF48B2D-6DCA-436A-AE97-81A222D4DB79</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Pantothenic Acid</string>
+							<key>OutputUUID</key>
+							<string>DBE2636F-0F0A-4069-A084-40F87F7DA043</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>11B845AB-59C8-441E-B0B6-EEF44B3CBEEA</string>
+				<string>4E290E05-AD3A-4953-AD7C-EA3882729CF9</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1364,7 +2150,7 @@
 										<key>OutputName</key>
 										<string>Pantothenic Acid</string>
 										<key>OutputUUID</key>
-										<string>99118607-2F5A-48C7-9294-50C3EBE35917</string>
+										<string>DBE2636F-0F0A-4069-A084-40F87F7DA043</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1387,13 +2173,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>96F7A571-4E7A-424A-85A8-6DEE82D755B8</string>
+				<key>UUID</key>
+				<string>3CE7CA90-6E63-4BA3-86D7-5BD783E373B8</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Vitamin B6</string>
 				<key>UUID</key>
-				<string>22BA424B-1E24-4225-9EAE-E957550A53A3</string>
+				<string>A2589FD2-963C-4225-8AF5-55DE5A6D4536</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.vitamin_b6_mg</string>
 				<key>WFInput</key>
@@ -1403,7 +2202,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1414,11 +2213,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>D2E35A6C-7EC0-4AEF-828B-216C2EF2EEEE</string>
+				<key>UUID</key>
+				<string>A27984C0-B657-4674-818D-AB4B429BB1D2</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Vitamin B6</string>
+							<key>OutputUUID</key>
+							<string>A2589FD2-963C-4225-8AF5-55DE5A6D4536</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>B81355F0-A40A-40C5-BCA0-4C9AB4D7958F</string>
+				<string>25659600-60F5-433B-9E30-4EA00D679CFE</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1444,7 +2277,7 @@
 										<key>OutputName</key>
 										<string>Vitamin B6</string>
 										<key>OutputUUID</key>
-										<string>22BA424B-1E24-4225-9EAE-E957550A53A3</string>
+										<string>A2589FD2-963C-4225-8AF5-55DE5A6D4536</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1467,13 +2300,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>D2E35A6C-7EC0-4AEF-828B-216C2EF2EEEE</string>
+				<key>UUID</key>
+				<string>C14FAFD9-9975-4D52-9C99-52E33914CE5E</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Biotin</string>
 				<key>UUID</key>
-				<string>2D17A581-7824-4AF6-8608-C74291B4413A</string>
+				<string>C198EF6C-B0C2-4293-9CEB-6AB9DEA81F07</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.biotin_b7_mcg</string>
 				<key>WFInput</key>
@@ -1483,7 +2329,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1494,11 +2340,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>506767B0-D584-48FF-B144-FAC2A2F95BFD</string>
+				<key>UUID</key>
+				<string>0A1FAD05-7416-4A0F-B8C0-2E5CCDED0515</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Biotin</string>
+							<key>OutputUUID</key>
+							<string>C198EF6C-B0C2-4293-9CEB-6AB9DEA81F07</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>4D05AE83-2858-4C25-B85B-2978522EAB10</string>
+				<string>835E9E9D-3555-47FF-8CA1-239D521E9D45</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1524,7 +2404,7 @@
 										<key>OutputName</key>
 										<string>Biotin</string>
 										<key>OutputUUID</key>
-										<string>2D17A581-7824-4AF6-8608-C74291B4413A</string>
+										<string>C198EF6C-B0C2-4293-9CEB-6AB9DEA81F07</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1547,13 +2427,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>506767B0-D584-48FF-B144-FAC2A2F95BFD</string>
+				<key>UUID</key>
+				<string>E79EEFB4-4392-4265-973E-140073BA867C</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Folate</string>
 				<key>UUID</key>
-				<string>9551868C-B16A-4460-BD80-F9E6E4F1A12D</string>
+				<string>72939116-F306-408B-BD0B-2736A38D58A4</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.folate_b9_mcg</string>
 				<key>WFInput</key>
@@ -1563,7 +2456,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1574,11 +2467,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>D1F68FC5-EC74-450F-912A-8B9B1C9B9D57</string>
+				<key>UUID</key>
+				<string>4DD05570-EF4E-4B6B-977E-C1E142D48FD0</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Folate</string>
+							<key>OutputUUID</key>
+							<string>72939116-F306-408B-BD0B-2736A38D58A4</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>37E66E64-8BE1-4D29-B71E-95E2A4DEE688</string>
+				<string>A0F2CEAB-7E6B-4EA7-8A08-19CE761E6C2D</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1604,7 +2531,7 @@
 										<key>OutputName</key>
 										<string>Folate</string>
 										<key>OutputUUID</key>
-										<string>9551868C-B16A-4460-BD80-F9E6E4F1A12D</string>
+										<string>72939116-F306-408B-BD0B-2736A38D58A4</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1627,13 +2554,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>D1F68FC5-EC74-450F-912A-8B9B1C9B9D57</string>
+				<key>UUID</key>
+				<string>52DC0972-0DA6-42D1-9320-D7DB09764F01</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Vitamin B12</string>
 				<key>UUID</key>
-				<string>33E40268-84F4-4425-A728-A3CEF4903DC0</string>
+				<string>8112E99F-39DC-444F-87F2-A6315A67CA6A</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.cobalamin_b12_mcg</string>
 				<key>WFInput</key>
@@ -1643,7 +2583,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1654,11 +2594,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>8ABAD1C3-2442-4BC9-AD11-2637C9DDFEDC</string>
+				<key>UUID</key>
+				<string>C9856AEE-8753-43BE-8050-818CC79F5802</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Vitamin B12</string>
+							<key>OutputUUID</key>
+							<string>8112E99F-39DC-444F-87F2-A6315A67CA6A</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>69969E1F-083A-4A1F-A7D2-7F37D888B358</string>
+				<string>2098B48B-926A-4633-BCDD-B369D30AAD05</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1684,7 +2658,7 @@
 										<key>OutputName</key>
 										<string>Vitamin B12</string>
 										<key>OutputUUID</key>
-										<string>33E40268-84F4-4425-A728-A3CEF4903DC0</string>
+										<string>8112E99F-39DC-444F-87F2-A6315A67CA6A</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1707,13 +2681,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>8ABAD1C3-2442-4BC9-AD11-2637C9DDFEDC</string>
+				<key>UUID</key>
+				<string>94BC502E-2855-4893-A4C3-D1CED53B8B40</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Vitamin C</string>
 				<key>UUID</key>
-				<string>2D2EE3C5-19A7-40F8-86C5-16F279BE1BE8</string>
+				<string>58EEEE04-563D-45D1-BB72-7DF6A1106C8E</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.vitamin_c_mg</string>
 				<key>WFInput</key>
@@ -1723,7 +2710,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1734,11 +2721,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>DF5CD448-9C03-45A4-94D4-A2B953DB9C1B</string>
+				<key>UUID</key>
+				<string>13A4F333-5D44-4F97-86FD-9AF5CD4B0A3D</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Vitamin C</string>
+							<key>OutputUUID</key>
+							<string>58EEEE04-563D-45D1-BB72-7DF6A1106C8E</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>FDB79F73-5EED-4229-A750-ADB2162B3B55</string>
+				<string>9E54B595-F511-4FD5-82EE-03CD2ABBE338</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1764,7 +2785,7 @@
 										<key>OutputName</key>
 										<string>Vitamin C</string>
 										<key>OutputUUID</key>
-										<string>2D2EE3C5-19A7-40F8-86C5-16F279BE1BE8</string>
+										<string>58EEEE04-563D-45D1-BB72-7DF6A1106C8E</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1787,13 +2808,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>DF5CD448-9C03-45A4-94D4-A2B953DB9C1B</string>
+				<key>UUID</key>
+				<string>A2D95838-8A80-4C7D-A431-CF480A2B5C5A</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Vitamin D</string>
 				<key>UUID</key>
-				<string>6FCCC7A4-6B9C-4CA6-8E0D-1726E8D9658F</string>
+				<string>AF8A4EA8-13A0-4355-9C1C-204F1D20BDF8</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.vitamin_d_iu</string>
 				<key>WFInput</key>
@@ -1803,7 +2837,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1814,11 +2848,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7AA5A817-8931-4AE6-BBB6-A9711A80CF8B</string>
+				<key>UUID</key>
+				<string>63645E8D-8FCC-45AF-BAF9-CC507C23AB50</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Vitamin D</string>
+							<key>OutputUUID</key>
+							<string>AF8A4EA8-13A0-4355-9C1C-204F1D20BDF8</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>31A522C1-E402-41D8-B77A-B03F503699C2</string>
+				<string>5DEE92E9-48C2-4A87-AC8A-AAEE5197C1B3</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1844,7 +2912,7 @@
 										<key>OutputName</key>
 										<string>Vitamin D</string>
 										<key>OutputUUID</key>
-										<string>6FCCC7A4-6B9C-4CA6-8E0D-1726E8D9658F</string>
+										<string>AF8A4EA8-13A0-4355-9C1C-204F1D20BDF8</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1867,13 +2935,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7AA5A817-8931-4AE6-BBB6-A9711A80CF8B</string>
+				<key>UUID</key>
+				<string>FD1C09CD-8D50-49BE-9C64-EA6A34013653</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Vitamin E</string>
 				<key>UUID</key>
-				<string>7DA12F50-03F7-4FAC-9575-5C831050AFB7</string>
+				<string>D17EA9A6-0E3D-4BCE-8528-AC538603A485</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.vitamin_e_mg</string>
 				<key>WFInput</key>
@@ -1883,7 +2964,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1894,11 +2975,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>B2FE7D81-A5A1-4BA9-AAEF-A7862B744AAB</string>
+				<key>UUID</key>
+				<string>3A51FA9F-E672-4C05-A279-3AB69256791D</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Vitamin E</string>
+							<key>OutputUUID</key>
+							<string>D17EA9A6-0E3D-4BCE-8528-AC538603A485</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>74543D19-0C8C-4A7A-B217-07D4E182CF23</string>
+				<string>AD8396F3-9660-47E4-B627-6A2CE5AB35C0</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -1924,7 +3039,7 @@
 										<key>OutputName</key>
 										<string>Vitamin E</string>
 										<key>OutputUUID</key>
-										<string>7DA12F50-03F7-4FAC-9575-5C831050AFB7</string>
+										<string>D17EA9A6-0E3D-4BCE-8528-AC538603A485</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -1947,13 +3062,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>B2FE7D81-A5A1-4BA9-AAEF-A7862B744AAB</string>
+				<key>UUID</key>
+				<string>F2635118-E8CA-49AD-80D9-B99B8ED1DF3E</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Vitamin K</string>
 				<key>UUID</key>
-				<string>31D15A01-B1CB-417D-8843-87EDE7584F04</string>
+				<string>B2E6D455-392B-47AA-83B2-BF3382479A02</string>
 				<key>WFDictionaryKey</key>
 				<string>vitamins.vitamin_k_mcg</string>
 				<key>WFInput</key>
@@ -1963,7 +3091,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1974,11 +3102,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>88F66324-9906-4D81-B13C-FD55DD9C3731</string>
+				<key>UUID</key>
+				<string>9F70FF49-3CF0-4ADA-B487-99EB1E266271</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Vitamin K</string>
+							<key>OutputUUID</key>
+							<string>B2E6D455-392B-47AA-83B2-BF3382479A02</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>1B61881C-C8BB-4D19-BC4A-266AB800A540</string>
+				<string>60B07541-DAA7-4EA3-BF90-FE9FB16822FE</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2004,7 +3166,7 @@
 										<key>OutputName</key>
 										<string>Vitamin K</string>
 										<key>OutputUUID</key>
-										<string>31D15A01-B1CB-417D-8843-87EDE7584F04</string>
+										<string>B2E6D455-392B-47AA-83B2-BF3382479A02</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2027,13 +3189,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>88F66324-9906-4D81-B13C-FD55DD9C3731</string>
+				<key>UUID</key>
+				<string>976C1ED5-35C0-4357-AFFF-F4701B34FB53</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Calcium</string>
 				<key>UUID</key>
-				<string>0584918E-6D35-4EE8-A097-B56139949A56</string>
+				<string>9055D780-ABD1-458C-A0AA-4D6038E64FBE</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.calcium_mg</string>
 				<key>WFInput</key>
@@ -2043,7 +3218,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2054,11 +3229,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>E95C6271-E737-4BE2-8C48-12E9E04A5183</string>
+				<key>UUID</key>
+				<string>FA618750-39CD-4E16-8AF8-811143FC439A</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Calcium</string>
+							<key>OutputUUID</key>
+							<string>9055D780-ABD1-458C-A0AA-4D6038E64FBE</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>34F4156D-24BE-4716-AE4C-C062435B15C4</string>
+				<string>D0A464B4-789C-47D4-A122-C5518B496A17</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2084,7 +3293,7 @@
 										<key>OutputName</key>
 										<string>Calcium</string>
 										<key>OutputUUID</key>
-										<string>0584918E-6D35-4EE8-A097-B56139949A56</string>
+										<string>9055D780-ABD1-458C-A0AA-4D6038E64FBE</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2107,13 +3316,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>E95C6271-E737-4BE2-8C48-12E9E04A5183</string>
+				<key>UUID</key>
+				<string>756DCD5C-2B93-4A9E-BED3-DF218002B853</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Chloride</string>
 				<key>UUID</key>
-				<string>A7F99882-984B-446B-B098-770F1111D8F3</string>
+				<string>6FDABB02-257C-4557-AC22-FAE4EAB2CF64</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.chloride_mg</string>
 				<key>WFInput</key>
@@ -2123,7 +3345,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2134,11 +3356,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C6619AC4-5188-4285-BE15-6023B763DAB9</string>
+				<key>UUID</key>
+				<string>5B4BFB6A-5F7D-44A0-95DD-37B2F4AFBF5F</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Chloride</string>
+							<key>OutputUUID</key>
+							<string>6FDABB02-257C-4557-AC22-FAE4EAB2CF64</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>686C57ED-7B73-41C1-B3C5-9D5CFB9134C7</string>
+				<string>21D978AC-29CE-4339-B105-FE5BF5F7AF6F</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2164,7 +3420,7 @@
 										<key>OutputName</key>
 										<string>Chloride</string>
 										<key>OutputUUID</key>
-										<string>A7F99882-984B-446B-B098-770F1111D8F3</string>
+										<string>6FDABB02-257C-4557-AC22-FAE4EAB2CF64</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2187,13 +3443,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>C6619AC4-5188-4285-BE15-6023B763DAB9</string>
+				<key>UUID</key>
+				<string>6BAC9012-E2E6-4C9F-AE75-7687EFDF0E90</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Chromium</string>
 				<key>UUID</key>
-				<string>BAE84788-849A-42DD-AC55-2653385A3FFE</string>
+				<string>0AD8FB7D-3400-4FD7-B0BA-5FC0BCBA8752</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.chromium_mcg</string>
 				<key>WFInput</key>
@@ -2203,7 +3472,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2214,11 +3483,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3549D942-1AD5-434D-A046-28482ED2DBEF</string>
+				<key>UUID</key>
+				<string>4772E3AC-9F4F-4487-BBA1-45CA2BE88AA9</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Chromium</string>
+							<key>OutputUUID</key>
+							<string>0AD8FB7D-3400-4FD7-B0BA-5FC0BCBA8752</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>BD6F4D67-C984-4CE0-9A9C-735A5CBD0ED6</string>
+				<string>6AE08CD4-F080-44B2-B5B5-435145F4A047</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2244,7 +3547,7 @@
 										<key>OutputName</key>
 										<string>Chromium</string>
 										<key>OutputUUID</key>
-										<string>BAE84788-849A-42DD-AC55-2653385A3FFE</string>
+										<string>0AD8FB7D-3400-4FD7-B0BA-5FC0BCBA8752</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2267,13 +3570,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>3549D942-1AD5-434D-A046-28482ED2DBEF</string>
+				<key>UUID</key>
+				<string>8BE6B777-E277-4FC2-9494-38589E2E2605</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Copper</string>
 				<key>UUID</key>
-				<string>41002AF7-6BD3-4827-A319-A08D4E6193DF</string>
+				<string>AC5705B8-E07B-4398-94C3-FAB82DC6AC60</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.copper_mg</string>
 				<key>WFInput</key>
@@ -2283,7 +3599,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2294,11 +3610,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>1078140C-ABC6-4A4A-A28C-0E4683677E06</string>
+				<key>UUID</key>
+				<string>EF1F7F4B-A997-4642-949C-168DEA0B2B77</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Copper</string>
+							<key>OutputUUID</key>
+							<string>AC5705B8-E07B-4398-94C3-FAB82DC6AC60</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>A5BD13E4-A285-4BE0-BDA5-B03BDBBC13CE</string>
+				<string>3866BA28-0D4E-4288-AF8C-67D81F8459B4</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2324,7 +3674,7 @@
 										<key>OutputName</key>
 										<string>Copper</string>
 										<key>OutputUUID</key>
-										<string>41002AF7-6BD3-4827-A319-A08D4E6193DF</string>
+										<string>AC5705B8-E07B-4398-94C3-FAB82DC6AC60</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2347,13 +3697,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>1078140C-ABC6-4A4A-A28C-0E4683677E06</string>
+				<key>UUID</key>
+				<string>CC326223-5F9F-4628-817C-37B877F29072</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Iodine</string>
 				<key>UUID</key>
-				<string>0A8A4EC4-F3B9-4843-8FDA-35A2F0005408</string>
+				<string>7E840CB0-DDD9-48B5-B5FB-1C3BAF485A26</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.iodine_mcg</string>
 				<key>WFInput</key>
@@ -2363,7 +3726,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2374,11 +3737,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>68909F2E-32B2-4257-8BFA-062C62E195AE</string>
+				<key>UUID</key>
+				<string>6D2530E1-EDB1-412D-93CC-9A02E9238802</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Iodine</string>
+							<key>OutputUUID</key>
+							<string>7E840CB0-DDD9-48B5-B5FB-1C3BAF485A26</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>25C8F1F9-C7C3-478E-AD09-E18E1CF36CB5</string>
+				<string>B3B35203-9011-4A61-85AE-31529BCA604E</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2404,7 +3801,7 @@
 										<key>OutputName</key>
 										<string>Iodine</string>
 										<key>OutputUUID</key>
-										<string>0A8A4EC4-F3B9-4843-8FDA-35A2F0005408</string>
+										<string>7E840CB0-DDD9-48B5-B5FB-1C3BAF485A26</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2427,13 +3824,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>68909F2E-32B2-4257-8BFA-062C62E195AE</string>
+				<key>UUID</key>
+				<string>AE0E6060-D774-45A0-B6DE-0E52D4BC65A8</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Iron</string>
 				<key>UUID</key>
-				<string>0C177F04-6E3A-46F7-A7E7-B9C470ED33EF</string>
+				<string>2C78C7E7-8D8B-4B7F-A269-43BE6290FE1E</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.iron_mg</string>
 				<key>WFInput</key>
@@ -2443,7 +3853,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2454,11 +3864,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>345A394F-A461-4B44-8F6B-7BD9ADF042EA</string>
+				<key>UUID</key>
+				<string>1E1142F0-5AFD-423E-8242-C62D434EF5BF</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Iron</string>
+							<key>OutputUUID</key>
+							<string>2C78C7E7-8D8B-4B7F-A269-43BE6290FE1E</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>542240AB-50BA-4021-B7FA-01C572D1F469</string>
+				<string>77D87DD5-4D23-4ED3-9486-A45E68A3D2BC</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2484,7 +3928,7 @@
 										<key>OutputName</key>
 										<string>Iron</string>
 										<key>OutputUUID</key>
-										<string>0C177F04-6E3A-46F7-A7E7-B9C470ED33EF</string>
+										<string>2C78C7E7-8D8B-4B7F-A269-43BE6290FE1E</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2507,13 +3951,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>345A394F-A461-4B44-8F6B-7BD9ADF042EA</string>
+				<key>UUID</key>
+				<string>26707917-4474-447C-84E7-7CF132D9C391</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Magnesium</string>
 				<key>UUID</key>
-				<string>17BB030C-E61B-4451-B8D9-C8E71CBAA0B3</string>
+				<string>ECFDC9E0-4AC4-4E59-9B84-8141BD3E6B6D</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.magnesium_mg</string>
 				<key>WFInput</key>
@@ -2523,7 +3980,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2534,11 +3991,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>191D8543-188F-4A1C-B19B-459D8B2DD08D</string>
+				<key>UUID</key>
+				<string>62928A5E-6BB6-4141-9C32-172BF220ED3D</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Magnesium</string>
+							<key>OutputUUID</key>
+							<string>ECFDC9E0-4AC4-4E59-9B84-8141BD3E6B6D</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>A8E69FCE-CC38-4A7E-9E26-207B3BBD5C5E</string>
+				<string>C7412F4D-52BD-4C82-BD30-3C03519FD58C</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2564,7 +4055,7 @@
 										<key>OutputName</key>
 										<string>Magnesium</string>
 										<key>OutputUUID</key>
-										<string>17BB030C-E61B-4451-B8D9-C8E71CBAA0B3</string>
+										<string>ECFDC9E0-4AC4-4E59-9B84-8141BD3E6B6D</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2587,13 +4078,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>191D8543-188F-4A1C-B19B-459D8B2DD08D</string>
+				<key>UUID</key>
+				<string>EB934C07-EBBF-4FD3-9869-5EF4EB0F310D</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Manganese</string>
 				<key>UUID</key>
-				<string>A06DEF96-4957-4931-BC74-833B5AFE9B52</string>
+				<string>37C5C340-B824-4EF3-8732-F48340B24B33</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.manganese_mg</string>
 				<key>WFInput</key>
@@ -2603,7 +4107,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2614,11 +4118,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>1DBB5205-A2C0-4211-B7B7-FEEB27029BD9</string>
+				<key>UUID</key>
+				<string>F1AA69E7-7DCD-4249-AF5C-4AF4EB2D4206</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Manganese</string>
+							<key>OutputUUID</key>
+							<string>37C5C340-B824-4EF3-8732-F48340B24B33</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>FD837D05-02E7-4E97-804F-F86CF524123F</string>
+				<string>25DE6E54-6B2D-4C5B-8C1B-15F78291CE2A</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2644,7 +4182,7 @@
 										<key>OutputName</key>
 										<string>Manganese</string>
 										<key>OutputUUID</key>
-										<string>A06DEF96-4957-4931-BC74-833B5AFE9B52</string>
+										<string>37C5C340-B824-4EF3-8732-F48340B24B33</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2667,13 +4205,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>1DBB5205-A2C0-4211-B7B7-FEEB27029BD9</string>
+				<key>UUID</key>
+				<string>C111472B-F9FD-4BFF-8C45-4B6EBF6339CF</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Molybdenum</string>
 				<key>UUID</key>
-				<string>AE026D0D-6D99-4910-82B7-3D47E2256ED1</string>
+				<string>ECA91384-39F8-4C6A-B954-916A5639C16B</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.molybdenum_mcg</string>
 				<key>WFInput</key>
@@ -2683,7 +4234,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2694,11 +4245,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>B1C8F59B-37E0-48EA-8876-BACA1D0E1B78</string>
+				<key>UUID</key>
+				<string>2FD29911-1D2F-47A1-A199-69461597254F</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Molybdenum</string>
+							<key>OutputUUID</key>
+							<string>ECA91384-39F8-4C6A-B954-916A5639C16B</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>B2F3E1D8-8062-4501-92C9-DCF7C5E74CEB</string>
+				<string>BE3482E0-5882-43E7-B412-FF345E7D2EFC</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2724,7 +4309,7 @@
 										<key>OutputName</key>
 										<string>Molybdenum</string>
 										<key>OutputUUID</key>
-										<string>AE026D0D-6D99-4910-82B7-3D47E2256ED1</string>
+										<string>ECA91384-39F8-4C6A-B954-916A5639C16B</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2747,13 +4332,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>B1C8F59B-37E0-48EA-8876-BACA1D0E1B78</string>
+				<key>UUID</key>
+				<string>45C4DE28-9746-46C5-B8E7-C6AC5BF0E933</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Phosphorus</string>
 				<key>UUID</key>
-				<string>DF469A48-E277-4EE1-984C-7C36FD6AEA92</string>
+				<string>135F8994-DA47-472D-BA0D-38308B24F12B</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.phosphorus_mg</string>
 				<key>WFInput</key>
@@ -2763,7 +4361,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2774,11 +4372,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>64B2B7D1-3F7D-448A-8432-285A025A36C3</string>
+				<key>UUID</key>
+				<string>05BE15AF-BDD5-42F5-9585-6FB8D9D9D51A</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Phosphorus</string>
+							<key>OutputUUID</key>
+							<string>135F8994-DA47-472D-BA0D-38308B24F12B</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>87D669A3-94C2-49DE-86AA-97AFBE507709</string>
+				<string>F703BDF2-38CA-4E04-B429-4211BCD5F66E</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2804,7 +4436,7 @@
 										<key>OutputName</key>
 										<string>Phosphorus</string>
 										<key>OutputUUID</key>
-										<string>DF469A48-E277-4EE1-984C-7C36FD6AEA92</string>
+										<string>135F8994-DA47-472D-BA0D-38308B24F12B</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2827,13 +4459,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>64B2B7D1-3F7D-448A-8432-285A025A36C3</string>
+				<key>UUID</key>
+				<string>9DA2D381-CA6C-4465-8034-16CBF157F3F1</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Potassium</string>
 				<key>UUID</key>
-				<string>21CB4FE9-2DDE-4899-AF01-81FD2AEE47AD</string>
+				<string>8C535C43-3AB3-45AB-8523-AAFB3C4B6864</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.potassium_mg</string>
 				<key>WFInput</key>
@@ -2843,7 +4488,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2854,11 +4499,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>4E22C53B-647D-441C-B91F-AD4F6A44D59A</string>
+				<key>UUID</key>
+				<string>E124F857-1162-4F9A-810E-A63D1CFB4147</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Potassium</string>
+							<key>OutputUUID</key>
+							<string>8C535C43-3AB3-45AB-8523-AAFB3C4B6864</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>825C9B37-A85D-47DB-AD4B-41957E1F6008</string>
+				<string>A41AF327-8D12-4F2D-B8C9-319C33DABFC5</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2884,7 +4563,7 @@
 										<key>OutputName</key>
 										<string>Potassium</string>
 										<key>OutputUUID</key>
-										<string>21CB4FE9-2DDE-4899-AF01-81FD2AEE47AD</string>
+										<string>8C535C43-3AB3-45AB-8523-AAFB3C4B6864</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2907,13 +4586,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>4E22C53B-647D-441C-B91F-AD4F6A44D59A</string>
+				<key>UUID</key>
+				<string>EE4CD335-0CFD-4D09-90FB-948B1DEF0363</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Selenium</string>
 				<key>UUID</key>
-				<string>74FCBE71-FB55-4756-A1E0-9C8DCAD02607</string>
+				<string>BE917951-089E-4F6F-A051-28485BF50974</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.selenium_mcg</string>
 				<key>WFInput</key>
@@ -2923,7 +4615,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -2934,11 +4626,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2275AB98-6E25-41B9-A05F-32D10FC5FFEB</string>
+				<key>UUID</key>
+				<string>DFEBE68D-2EBB-4274-967C-0421C8AC8519</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Selenium</string>
+							<key>OutputUUID</key>
+							<string>BE917951-089E-4F6F-A051-28485BF50974</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>4E69CB30-6FEA-4470-9DE3-5F1B7B1D2FE0</string>
+				<string>6661F5C8-5EE0-4AE2-8DC3-51810B6C054A</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -2964,7 +4690,7 @@
 										<key>OutputName</key>
 										<string>Selenium</string>
 										<key>OutputUUID</key>
-										<string>74FCBE71-FB55-4756-A1E0-9C8DCAD02607</string>
+										<string>BE917951-089E-4F6F-A051-28485BF50974</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -2987,13 +4713,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2275AB98-6E25-41B9-A05F-32D10FC5FFEB</string>
+				<key>UUID</key>
+				<string>50A6ADB9-300F-46AA-B9B9-8CB463510E1C</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Sodium</string>
 				<key>UUID</key>
-				<string>EC1D9906-78F7-4D8F-8F49-A7C0C13DAFC2</string>
+				<string>BC961181-F6A3-4DDB-9361-4D1056216457</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.sodium_mg</string>
 				<key>WFInput</key>
@@ -3003,7 +4742,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -3014,11 +4753,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>CDB41374-65F8-4905-9D50-BABB0245C923</string>
+				<key>UUID</key>
+				<string>2CFC7997-99D2-40D0-8887-5594C1716D48</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Sodium</string>
+							<key>OutputUUID</key>
+							<string>BC961181-F6A3-4DDB-9361-4D1056216457</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>AB4AF4B7-53EF-4E82-8116-39D60C3104C5</string>
+				<string>807C520D-1109-46F6-9D2D-FFD79A05A681</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -3044,7 +4817,7 @@
 										<key>OutputName</key>
 										<string>Sodium</string>
 										<key>OutputUUID</key>
-										<string>EC1D9906-78F7-4D8F-8F49-A7C0C13DAFC2</string>
+										<string>BC961181-F6A3-4DDB-9361-4D1056216457</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -3067,13 +4840,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>CDB41374-65F8-4905-9D50-BABB0245C923</string>
+				<key>UUID</key>
+				<string>CEB87608-93F3-4BF1-B847-43B6CC368D0D</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Zinc</string>
 				<key>UUID</key>
-				<string>AFA4A546-FD36-4651-8126-A1F1775A0AD9</string>
+				<string>9C685965-A513-48D9-A6DA-BC57F4DB8E8A</string>
 				<key>WFDictionaryKey</key>
 				<string>minerals.zinc_mg</string>
 				<key>WFInput</key>
@@ -3083,7 +4869,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -3094,11 +4880,45 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7F884DE4-D1D7-413A-B924-D87D9D4FE4B0</string>
+				<key>UUID</key>
+				<string>92B1D69D-35F0-4558-9A39-763BB64ACC19</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>Zinc</string>
+							<key>OutputUUID</key>
+							<string>9C685965-A513-48D9-A6DA-BC57F4DB8E8A</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.health.quantity.log</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>C83318F5-4D24-44DD-BFB1-23031A404934</string>
+				<string>53B76A70-A077-49B0-9C11-88E6B9B714F7</string>
 				<key>WFQuantitySampleAdditionalQuantity</key>
 				<dict>
 					<key>Value</key>
@@ -3124,7 +4944,7 @@
 										<key>OutputName</key>
 										<string>Zinc</string>
 										<key>OutputUUID</key>
-										<string>AFA4A546-FD36-4651-8126-A1F1775A0AD9</string>
+										<string>9C685965-A513-48D9-A6DA-BC57F4DB8E8A</string>
 										<key>Type</key>
 										<string>ActionOutput</string>
 									</dict>
@@ -3147,13 +4967,26 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>7F884DE4-D1D7-413A-B924-D87D9D4FE4B0</string>
+				<key>UUID</key>
+				<string>A786CFF1-8B1D-449A-987D-953177224C82</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>CustomOutputName</key>
 				<string>Meal Name</string>
 				<key>UUID</key>
-				<string>35A4C883-F577-4FFF-8C39-B94F9D204F13</string>
+				<string>59AEDD25-2356-4305-ADD7-5999419E324C</string>
 				<key>WFDictionaryKey</key>
 				<string>meal_name</string>
 				<key>WFInput</key>
@@ -3163,7 +4996,7 @@
 						<key>OutputName</key>
 						<string>Payload</string>
 						<key>OutputUUID</key>
-						<string>44D6832D-B708-44AB-A4EF-CC1B4E5D2998</string>
+						<string>4570902C-6257-4D87-95AA-80A6879856A0</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -3188,7 +5021,7 @@
 								<key>OutputName</key>
 								<string>Meal Name</string>
 								<key>OutputUUID</key>
-								<string>35A4C883-F577-4FFF-8C39-B94F9D204F13</string>
+								<string>59AEDD25-2356-4305-ADD7-5999419E324C</string>
 								<key>Type</key>
 								<string>ActionOutput</string>
 							</dict>
