@@ -12,7 +12,7 @@ Shortcut → 39 HealthKit field loop into a single turnkey project.
 ## Architecture
 
 ```
-LLM Chat App (Gemini / Custom Gem)
+Any LLM Chat App (paste-in system prompt)
         │  shortcuts://run-shortcut?name=LogFullNutrition&...
         ▼
 iOS Shortcut Client  →  writes to HealthKit         ◀── this alone is the whole app
@@ -28,9 +28,9 @@ Web Dashboard (Next.js + shadcn/ui)
 
 No backend, no signup, no deploy.
 
-1. Set up the Gemini Gem (or any LLM chat app) per
-   [docs/GEMINI_SETUP.md](docs/GEMINI_SETUP.md), using the system prompt in
-   [docs/GEMINI_SYSTEM_PROMPT.md](docs/GEMINI_SYSTEM_PROMPT.md).
+1. Paste [docs/SYSTEM_PROMPT.md](docs/SYSTEM_PROMPT.md) into any LLM chat app (ChatGPT,
+   Claude, Gemini — whatever you already use). No account setup, no Gem/GPT/Project to
+   create. See [docs/USAGE.md](docs/USAGE.md).
 2. Build the iOS Shortcut per [docs/SHORTCUT_SETUP.md](docs/SHORTCUT_SETUP.md) — steps 1–3 only.
 3. Describe a meal in the chat app, tap the link it replies with. Done — it's in Apple Health.
 
@@ -74,14 +74,14 @@ Vitamin D, Vitamin E, Vitamin K
 **Minerals & Electrolytes** — Calcium, Chloride, Chromium, Copper, Iodine, Iron, Magnesium,
 Manganese, Molybdenum, Phosphorus, Potassium, Selenium, Sodium, Zinc
 
-JSON field names for each are in [docs/GEMINI_SYSTEM_PROMPT.md](docs/GEMINI_SYSTEM_PROMPT.md),
+JSON field names for each are in [docs/SYSTEM_PROMPT.md](docs/SYSTEM_PROMPT.md),
 the Postgres columns in [schema.sql](schema.sql), and the HealthKit mapping in
 [docs/SHORTCUT_SETUP.md](docs/SHORTCUT_SETUP.md).
 
 ## API
 
 - `POST /api/v1/meals` — ingest a full nutrition payload (see the JSON schema in
-  [docs/GEMINI_SYSTEM_PROMPT.md](docs/GEMINI_SYSTEM_PROMPT.md)). Requires
+  [docs/SYSTEM_PROMPT.md](docs/SYSTEM_PROMPT.md)). Requires
   `Authorization: Bearer <API_SECRET_KEY>`.
 - `GET /api/v1/meals?date=YYYY-MM-DD` — fetch meals for a given day.
 - `POST /api/v1/activity` — optional activity sync (`active_energy_kcal`, `steps`).

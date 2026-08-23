@@ -85,7 +85,7 @@ full HealthKit "Nutrition" category — nothing skipped.
 | `Mins.zinc_mg` | Zinc | mg |
 
 This maps 1:1 to the JSON schema in
-[GEMINI_SYSTEM_PROMPT.md](GEMINI_SYSTEM_PROMPT.md), the `meal_nutrients` columns in
+[SYSTEM_PROMPT.md](SYSTEM_PROMPT.md), the `meal_nutrients` columns in
 [schema.sql](../schema.sql), and the RDA table in `web/src/lib/rda-standards.ts` — every field
 tracked end to end.
 
