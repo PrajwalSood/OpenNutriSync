@@ -212,6 +212,9 @@ def build() -> dict:
 
 if __name__ == "__main__":
     out = Path(__file__).parent / "LogFullNutrition-unsigned.shortcut"
+    workflow = build()
+    # XML, not binary: binary plist object-uniquing shares identical sub-dicts
+    # across actions, which Apple's own exports never do.
     with open(out, "wb") as f:
-        plistlib.dump(build(), f, fmt=plistlib.FMT_BINARY)
-    print(f"wrote {out} ({out.stat().st_size} bytes, {len(build()['WFWorkflowActions'])} actions)")
+        plistlib.dump(workflow, f, fmt=plistlib.FMT_XML)
+    print(f"wrote {out} ({out.stat().st_size} bytes, {len(workflow['WFWorkflowActions'])} actions)")
