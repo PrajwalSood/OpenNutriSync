@@ -21,21 +21,25 @@ No Mac? Build it by hand following the steps below.
 
 ## One-time bulk Health approval
 
-iOS won't let a shortcut file pre-grant Health access — permission is always granted by you,
-at run time. Do it once for all 39 types instead of drip-feeding across your first real meals:
+iOS never lets a shortcut file pre-grant Health access — write permission is granted by you at
+run time, per data type. There is no API around this; the goal is to make it a single sitting
+instead of interrupting your first 39 real meals:
 
 1. On your iPhone, open [shortcut/test-payload-link.txt](../shortcut/test-payload-link.txt)
    from this repo and tap the `shortcuts://` link inside (or copy it into Safari's address
-   bar). It runs `LogFullNutrition` with an all-zeros test meal that touches every field.
-2. When the Health access sheet appears, tap **Turn On All**, then allow the run. If iOS
-   shows per-action prompts instead, choose **Always Allow** each time — this test run is
-   exactly so those prompts happen now, once, rather than mid-meal later.
-3. The test writes only zero-value samples under the name "Permission Setup Test" — harmless
-   to totals. Delete them in the Health app if you want (Browse → nutrient → Show All Data).
-
-Alternative without running anything: Health app → your profile picture → **Apps** (under
-Privacy) → **Shortcuts** → **Turn On All** write permissions. Only works after Shortcuts has
-requested Health access at least once.
+   bar). It runs `LogFullNutrition` with a 1-unit test meal that touches every field.
+2. Approve whatever iOS throws at you during this run — a Health sheet (tap **Turn On All**)
+   and/or per-type prompts (tap **Always Allow** each time). Tedious, but this is the last
+   time: permissions are remembered per type, so real meals afterwards log silently.
+3. **Shortcut way**: after the first grant, Shortcuts appears as a data source in Health. Go
+   to Health app → your profile picture → **Apps & Services** (under Privacy) → **Shortcuts**
+   → **Turn On All**. This flips every remaining write permission in two taps — do this after
+   the first prompt if you don't want to sit through all 39.
+4. Verify: Health app → Browse → Nutrition → e.g. Dietary Energy should show a 1-cal
+   "Permission Setup Test" entry. Each nutrient got a 1-unit sample — negligible for totals,
+   deletable per type via Show All Data if you care.
+5. Run the test link once more after step 3 — it should complete with zero prompts. If it
+   does, you're fully approved.
 
 ## Building manually
 
