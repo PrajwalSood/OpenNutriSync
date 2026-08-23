@@ -5,5 +5,4 @@ node_modules/
 *.log
 .DS_Store
 *.tsbuildinfo
-shortcut/LogFullNutrition-signed-personal.shortcut
 shortcut/LogFullNutrition.shortcut
