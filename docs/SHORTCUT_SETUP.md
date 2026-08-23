@@ -22,20 +22,72 @@ Accepts JSON string from the chat app's URL scheme.
 
 ## 3. Log Health Samples (chained `Log Health Sample` actions)
 
+All 39 Apple Health nutrition fields, in one `Log Health Sample` action per row. This is the
+full HealthKit "Nutrition" category — nothing skipped.
+
+**Energy & Hydration**
+
 | Source | HealthKit Type | Unit |
 |---|---|---|
 | `Energy.dietary_energy_kcal` | Dietary Energy | kcal |
 | `Energy.water_ml` | Water | mL |
-| `Macros.protein_g` | Protein | g |
+| `Energy.caffeine_mg` | Caffeine | mg |
+
+**Macronutrients**
+
+| Source | HealthKit Type | Unit |
+|---|---|---|
 | `Macros.carbohydrates_g` | Carbohydrates | g |
-| `Macros.total_fat_g` | Total Fat | g |
+| `Macros.dietary_sugar_g` | Sugar | g |
 | `Macros.fiber_g` | Fiber | g |
+| `Macros.protein_g` | Protein | g |
+| `Macros.total_fat_g` | Total Fat | g |
+| `Macros.saturated_fat_g` | Saturated Fat | g |
+| `Macros.monounsaturated_fat_g` | Monounsaturated Fat | g |
+| `Macros.polyunsaturated_fat_g` | Polyunsaturated Fat | g |
+| `Macros.cholesterol_mg` | Cholesterol | mg |
+
+**Vitamins**
+
+| Source | HealthKit Type | Unit |
+|---|---|---|
+| `Vits.vitamin_a_mcg` | Vitamin A | mcg |
+| `Vits.thiamin_b1_mg` | Thiamin (Vitamin B1) | mg |
+| `Vits.riboflavin_b2_mg` | Riboflavin (Vitamin B2) | mg |
+| `Vits.niacin_b3_mg` | Niacin (Vitamin B3) | mg |
+| `Vits.pantothenic_acid_b5_mg` | Pantothenic Acid (Vitamin B5) | mg |
+| `Vits.vitamin_b6_mg` | Vitamin B6 (Pyridoxine) | mg |
+| `Vits.biotin_b7_mcg` | Biotin (Vitamin B7) | mcg |
+| `Vits.folate_b9_mcg` | Folate / Folic Acid (Vitamin B9) | mcg |
+| `Vits.cobalamin_b12_mcg` | Vitamin B12 (Cobalamin) | mcg |
 | `Vits.vitamin_c_mg` | Vitamin C | mg |
 | `Vits.vitamin_d_iu` | Vitamin D | IU |
-| `Mins.potassium_mg` | Potassium | mg |
-| `Mins.sodium_mg` | Sodium | mg |
+| `Vits.vitamin_e_mg` | Vitamin E | mg |
+| `Vits.vitamin_k_mcg` | Vitamin K | mcg |
 
-Add the remaining vitamin & mineral fields the same way as needed.
+**Minerals & Electrolytes**
+
+| Source | HealthKit Type | Unit |
+|---|---|---|
+| `Mins.calcium_mg` | Calcium | mg |
+| `Mins.chloride_mg` | Chloride | mg |
+| `Mins.chromium_mcg` | Chromium | mcg |
+| `Mins.copper_mg` | Copper | mg |
+| `Mins.iodine_mcg` | Iodine | mcg |
+| `Mins.iron_mg` | Iron | mg |
+| `Mins.magnesium_mg` | Magnesium | mg |
+| `Mins.manganese_mg` | Manganese | mg |
+| `Mins.molybdenum_mcg` | Molybdenum | mcg |
+| `Mins.phosphorus_mg` | Phosphorus | mg |
+| `Mins.potassium_mg` | Potassium | mg |
+| `Mins.selenium_mcg` | Selenium | mcg |
+| `Mins.sodium_mg` | Sodium | mg |
+| `Mins.zinc_mg` | Zinc | mg |
+
+This maps 1:1 to the JSON schema in
+[GEMINI_SYSTEM_PROMPT.md](GEMINI_SYSTEM_PROMPT.md), the `meal_nutrients` columns in
+[schema.sql](../schema.sql), and the RDA table in `web/src/lib/rda-standards.ts` — every field
+tracked end to end.
 
 ## 4. Webhook Sync (optional — skip if not running the dashboard)
 
