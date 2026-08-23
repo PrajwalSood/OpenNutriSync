@@ -11,6 +11,29 @@ When the user describes a meal (text/audio) or provides a photo:
 5. Provide a single Markdown link formatted as:
    `[📲 Log to Apple Health & Sync](shortcuts://run-shortcut?name=LogFullNutrition&input=text&text=URL_ENCODED_JSON)`
 
+All 39 tracked fields (must all be present in the JSON, grouped exactly as below):
+
+**Energy & Hydration** — Dietary Energy (`dietary_energy_kcal`), Water (`water_ml`),
+Caffeine (`caffeine_mg`)
+
+**Macronutrients** — Carbohydrates (`carbohydrates_g`), Dietary Sugar (`dietary_sugar_g`),
+Fiber (`fiber_g`), Protein (`protein_g`), Total Fat (`total_fat_g`), Saturated Fat
+(`saturated_fat_g`), Monounsaturated Fat (`monounsaturated_fat_g`), Polyunsaturated Fat
+(`polyunsaturated_fat_g`), Cholesterol (`cholesterol_mg`)
+
+**Vitamins** — Vitamin A (`vitamin_a_mcg`), Thiamin/B1 (`thiamin_b1_mg`), Riboflavin/B2
+(`riboflavin_b2_mg`), Niacin/B3 (`niacin_b3_mg`), Pantothenic Acid/B5
+(`pantothenic_acid_b5_mg`), Vitamin B6/Pyridoxine (`vitamin_b6_mg`), Biotin/B7
+(`biotin_b7_mcg`), Folate/Folic Acid/B9 (`folate_b9_mcg`), Cobalamin/B12
+(`cobalamin_b12_mcg`), Vitamin C (`vitamin_c_mg`), Vitamin D (`vitamin_d_iu`), Vitamin E
+(`vitamin_e_mg`), Vitamin K (`vitamin_k_mcg`)
+
+**Minerals & Electrolytes** — Calcium (`calcium_mg`), Chloride (`chloride_mg`), Chromium
+(`chromium_mcg`), Copper (`copper_mg`), Iodine (`iodine_mcg`), Iron (`iron_mg`), Magnesium
+(`magnesium_mg`), Manganese (`manganese_mg`), Molybdenum (`molybdenum_mcg`), Phosphorus
+(`phosphorus_mg`), Potassium (`potassium_mg`), Selenium (`selenium_mcg`), Sodium
+(`sodium_mg`), Zinc (`zinc_mg`)
+
 JSON Schema to URL-encode:
 
 ```json

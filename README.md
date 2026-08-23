@@ -60,6 +60,24 @@ npm run dev
 Requires a running Postgres instance matching `DATABASE_URL` (run `docker compose up -d postgres`
 and apply `schema.sql`, or point at any existing Postgres/Supabase instance).
 
+## Tracked nutrients (all 39)
+
+**Energy & Hydration** — Dietary Energy, Water, Caffeine
+
+**Macronutrients** — Carbohydrates, Dietary Sugar, Fiber, Protein, Total Fat, Saturated Fat,
+Monounsaturated Fat, Polyunsaturated Fat, Cholesterol
+
+**Vitamins** — Vitamin A, Thiamin (B1), Riboflavin (B2), Niacin (B3), Pantothenic Acid (B5),
+Vitamin B6 (Pyridoxine), Biotin (B7), Folate/Folic Acid (B9), Cobalamin (B12), Vitamin C,
+Vitamin D, Vitamin E, Vitamin K
+
+**Minerals & Electrolytes** — Calcium, Chloride, Chromium, Copper, Iodine, Iron, Magnesium,
+Manganese, Molybdenum, Phosphorus, Potassium, Selenium, Sodium, Zinc
+
+JSON field names for each are in [docs/GEMINI_SYSTEM_PROMPT.md](docs/GEMINI_SYSTEM_PROMPT.md),
+the Postgres columns in [schema.sql](schema.sql), and the HealthKit mapping in
+[docs/SHORTCUT_SETUP.md](docs/SHORTCUT_SETUP.md).
+
 ## API
 
 - `POST /api/v1/meals` — ingest a full nutrition payload (see the JSON schema in
