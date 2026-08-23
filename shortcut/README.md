@@ -28,6 +28,15 @@ Note: files signed with the default `people-who-know-me` mode embed your iCloud 
 only import for your contacts — don't publish those. For sharing with strangers, use
 `--mode anyone` or the iCloud-link method in the docs.
 
+## Files
+
+- `LogFullNutrition-unsigned.shortcut` — the shortcut, ready to sign (also attached to GitHub
+  Releases).
+- `generate_shortcut.py` — builds the file above.
+- `test-payload.json` / `test-payload-link.txt` — all-zeros test meal used for the one-time
+  bulk Health permission grant (see
+  [../docs/SHORTCUT_SETUP.md](../docs/SHORTCUT_SETUP.md#one-time-bulk-health-approval)).
+
 ## Regenerating
 
 ```sh

@@ -18,6 +18,24 @@ add the webhook step from §4 below inside the imported shortcut.
 
 No Mac? Build it by hand following the steps below.
 
+## One-time bulk Health approval
+
+iOS won't let a shortcut file pre-grant Health access — permission is always granted by you,
+at run time. Do it once for all 39 types instead of drip-feeding across your first real meals:
+
+1. On your iPhone, open [shortcut/test-payload-link.txt](../shortcut/test-payload-link.txt)
+   from this repo and tap the `shortcuts://` link inside (or copy it into Safari's address
+   bar). It runs `LogFullNutrition` with an all-zeros test meal that touches every field.
+2. When the Health access sheet appears, tap **Turn On All**, then allow the run. If iOS
+   shows per-action prompts instead, choose **Always Allow** each time — this test run is
+   exactly so those prompts happen now, once, rather than mid-meal later.
+3. The test writes only zero-value samples under the name "Permission Setup Test" — harmless
+   to totals. Delete them in the Health app if you want (Browse → nutrient → Show All Data).
+
+Alternative without running anything: Health app → your profile picture → **Apps** (under
+Privacy) → **Shortcuts** → **Turn On All** write permissions. Only works after Shortcuts has
+requested Health access at least once.
+
 ## Building manually
 
 Create an Apple Shortcut named `LogFullNutrition`.
